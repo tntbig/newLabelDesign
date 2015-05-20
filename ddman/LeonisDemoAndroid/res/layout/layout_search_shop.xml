@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  
+    android:background="#EEEEEEEE" >
+
+    <ListView
+        android:id="@+id/lv_listshop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlt_cancel" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/rlt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+         >
+		<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="1dp"
+            android:background="#DADADC" >
+        </View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="キャンセル" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver"
+    android:orientation="vertical" >
+
+    <com.etsy.android.grid.StaggeredGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/MyGridStamp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:column_count="1"
+        android:horizontalSpacing="10dip"
+        android:verticalSpacing="10dip"
+        android:layout_margin="2dip"
+        app:item_margin="8dp" />
+
+    <!--
+         <GridView
+        android:id="@+id/MyGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:horizontalSpacing="10dip"
+        android:verticalSpacing="10dip"
+        android:layout_margin="2dip"
+        android:numColumns="2" />
+    -->
+
+</LinearLayout>

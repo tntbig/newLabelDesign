@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OffersLeonisDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_refresh">action_refresh</string>
+    <string name="action_edit">action_edit</string>
+    <string name="action_about">action_about</string>
+    <string name="action_search">action_search</string>
+    <string name="action_discard">action_discard</string>
+    <string name="action_unread">action_unread</string>
+    <!-- Coupon details -->
+    <string name="notice_string">この度は本クーポンのご利用ありがとうございました。</string>
+
+    <!-- Main Activity -->
+    <string name="reset">リセット</string>
+    <string name="function">機能</string>
+    <string name="coupon">クーポン一覧</string>
+    <string name="recommendation">レコメンド一覧</string>
+    <string name="stamp">スタンプラリー</string>
+    <string name="compaign">キャンペーンコード入力</string>
+    <string name="notification">プッシュ通知履歴</string>
+    
+    <!-- Name of parent menu -->
+    <string name="account">アカウント</string>
+    <string name="other">その他</string>
+    
+    <!-- Name childs of menu Account -->
+    <string name="change_membership_number">社員番号変更</string>
+    <string name="change_group">グループ変更</string>
+    <string name="device_information">端末情報</string>
+    
+    <!-- Name childs of menu Other -->
+    <string name="link_offers">OFFERs特設サイト</string>
+    
+    <!-- Strings of Groups -->
+    <string name="group">所属グループ</string>
+    <string name="target_id">社員番号</string>
+    <string name="ok">OK</string>
+    <string name="cancel">キャンセル</string>
+    <string name="getCoupon">クーポンを取得</string>
+    
+    <!-- String Campaign -->
+    <string name="campaign_code_title">キャンペーン</string>
+    <string name="campaign_code_description_header">キャンペーンなどで入手したキャンペーンコードをお持ちの方は下記に入力してクーポンを取得できます。</string>
+    <string name="campaign_code_alert_length">キャンペーンコードを入力してください</string>
+    <string name="campaign_code_alert_fail">キャンペーンコードを確認できません。\nキャンペーンコードに誤りがないかご確認ください。</string>
+    
+    <!-- String notifications -->
+    <string name="notifications_title">プッシュ通知</string>
+    
+    <!-- String of Membership Number pop-up -->
+    <string name="membership_number">会員番号</string>
+    <string name="membership_description_header">会員番号を入力してください。会員番号には任意の８桁の数字を登録ことができます。</string>
+    <string name="membership_description_footer">会員番号はターゲットリストで利用できます。ターゲットリストを利用してオファーやプッシュ通知を作成することで、任意のユーザーにのみ配信することができます。</string>
+    
+    <!-- String of Groups pop-up -->
+    <string name="title_groups">グループ</string>
+    <string name="group_description_header">所属グループ番号を入力してください。グループ番号は企業や部署毎に割り振られる８桁の番号です。</string>
+    <string name="coupon_token_url">http://inhouse-app.s3.amazonaws.com/DemoGroupAndApikey3.json</string>
+    
+    <!-- String of Information pop-up -->
+    <string name="app_version">アプリバージョン</string>
+    
+    <!-- Link Offers -->
+    <string name="link_offer_url">http://www.trans-cosmos.co.jp/special/digitalmktg/offers.html</string>
+    
+    
+</resources>

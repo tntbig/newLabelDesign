@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recomendView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+		<RelativeLayout 
+		    android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:background="@color/white">
+	        <com.demo.utils.ProportionalImageView
+	            android:id="@+id/imageRecommend"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerHorizontal="true"
+	            android:adjustViewBounds="true"
+	            android:scaleType="fitCenter" />
+	
+	        <TextView
+	            android:id="@+id/tvTitle"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_below="@+id/imageRecommend"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginTop="10dp"
+	            android:text="" />
+	
+	        <WebView
+	            android:id="@+id/wvRecommend"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_alignParentLeft="true"
+	            android:layout_below="@+id/tvTitle"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginTop="10dp" />
+	
+	        <ProgressBar
+	            android:id="@+id/pbRecommend"
+	            style="?android:attr/progressBarStyle"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:visibility="gone" >
+	        </ProgressBar>
+        </RelativeLayout>
+	</ScrollView>
+</RelativeLayout>
+    

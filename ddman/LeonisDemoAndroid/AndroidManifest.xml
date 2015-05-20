@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    
+
+    <permission
+        android:name="com.demo.android.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.demo.android.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+        <meta-data
+            android:name="LEONIS_SERVER_PROTOCOL"
+            android:value="https" />
+        <meta-data
+            android:name="LEONIS_SERVER_VERSION"
+            android:value="1.0" />
+        <meta-data
+            android:name="LEONIS_SERVER_HOST"
+            android:value="demo-platform-staging.leonisand.co" />
+        <meta-data
+            android:name="LEONIS_APPLICATION_KEY"
+            android:value="xygAagrSegaaL" />
+        <!-- ZesVRp2Mt41K -->
+        <meta-data
+            android:name="CUPIDO_GCM_SENDER_ID"
+            android:value="project:366983523610" />
+        <!-- 370121863653 -->
+        <meta-data
+            android:name="CUPIDO_NOTIFICATION_ACTIVITY_NAME"
+            android:value="com.demo.android.NotificationActivity" />
+        <meta-data
+            android:name="ALERT_ICON_RESOURCE_ID"
+            android:value="0x7f020073" />
+        <meta-data
+            android:name="CUPIDO_DEBUG"
+            android:value="true" />
+
+        <activity
+            android:name="com.demo.android.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.demo.android.NotificationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.leonisand.cupido.DialogActivity"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="co.leonisand.cupido.GCMReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.demo.android" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="co.leonisand.cupido.GCMIntentService" />
+    </application>
+
+</manifest>

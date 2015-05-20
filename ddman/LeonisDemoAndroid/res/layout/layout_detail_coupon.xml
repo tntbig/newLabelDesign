@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.demo.android.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_detail_coupon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true" >
+
+        <RelativeLayout
+            android:id="@+id/rlt_detail_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlt_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="@color/fontColorTitle"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_image"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/rlt_title" >
+
+                <ImageView
+                    android:id="@+id/img_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlt_image" >
+
+                <Button
+                    android:id="@+id/btn_button"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/nice_button"
+                    android:gravity="center"
+                    android:text="利用する"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlt_button"
+                android:paddingBottom="15dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_description_2x" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_description"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/fontColor" />
+
+                <ImageView
+                    android:id="@+id/img_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_description"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/icon_text_2x" />
+
+                <TextView
+                    android:id="@+id/tv_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_text"
+                    android:layout_marginTop="15dp"
+                    android:text=""
+                    android:textColor="@color/fontColor" />
+
+                <ImageView
+                    android:id="@+id/img_remain"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_text"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/icon_remain_2x" />
+
+                <TextView
+                    android:id="@+id/tv_remain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_remain"
+                    android:layout_marginTop="15dp"
+                    android:text=""
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/fontColor" />
+
+                <TextView
+                    android:id="@+id/tv_remain2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_remain1"
+                    android:layout_below="@+id/tv_remain1"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/fontColor" />
+
+                <ImageView
+                    android:id="@+id/img_shop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_remain2"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/icon_shop_2x" />
+
+                <TextView
+                    android:id="@+id/tv_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_shop"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text=""
+                    android:textColor="@color/fontColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_used"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/rlt_detail"
+                android:layout_marginTop="20dp"
+                android:background="#efeff4"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/coupon_icon_used_success" />
+
+                <TextView
+                    android:id="@+id/tv_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_success"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="この度は本クーポンのご利用ありがとうございました。"
+                    android:textColor="@color/fontColor" />
+
+                <TextView
+                    android:id="@+id/tv_timecurrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_notice"
+                    android:layout_centerHorizontal="true"
+                    android:text="2015年04月23日"
+                    android:textColor="@color/fontColor" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</com.demo.android.CustomScrollView>

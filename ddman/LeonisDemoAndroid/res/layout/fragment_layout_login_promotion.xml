@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlt_title" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/rlt_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rlt_status_bar"
+        android:background="@color/actionbar" >
+
+        <ImageView
+            android:id="@+id/imb_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/close_icon_3x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="キャンペーン"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlt_title"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="キャンペーンなどで入手したキャンペーンコードをお持ちの方は下記に入力してクーポンを取得できます。"
+        android:textColor="@color/fontColor" />
+
+    <EditText
+        android:id="@+id/et_textnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_texttitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border_edittext"
+        android:inputType="number"
+        android:maxLength="19"
+        android:padding="5dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/et_textnumber"
+        android:layout_alignRight="@+id/et_textnumber"
+        android:layout_below="@+id/et_textnumber"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/nice_button"
+        android:gravity="center"
+        android:text="@string/getCoupon"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

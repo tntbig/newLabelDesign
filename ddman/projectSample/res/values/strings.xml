@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OffersSample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_refresh">action_refresh</string>
+    <string name="action_edit">action_edit</string>
+    <string name="action_about">action_about</string>
+    <string name="action_search">action_search</string>
+    <string name="action_discard">action_discard</string>
+    <string name="action_unread">action_unread</string>
+    
+</resources>

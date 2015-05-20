@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="holo_light_blue">#ff33b5e5</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#ff575757</color>
+    <color name="heavy_gray">#ff878589</color>
+    <color name="light_gray">#ffeeeeee</color>
+    <color name="ultra_light_gray">#fff9f7f9</color>
+    <color name="semi_transparent_black">#c8000000</color>
+    <color name="splash_bg">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="papi">#ffccb38b</color>
+</resources>

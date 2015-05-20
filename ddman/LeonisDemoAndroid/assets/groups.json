@@ -1,0 +1,54 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "TCI",
+            "platform_app_key": "dfcf6ca312974de09f3c064598b5ce8c",
+            "scheme": "saledemoapp",
+            "password": "00001234"
+        },
+        {
+            "id": "2",
+            "name": "譚ｱ譌･譛ｬ",
+            "platform_app_key": "b265ceb525c9443192ba8d9f2e0cfa71",
+            "scheme": "saledemoapp",
+            "password": "00001234"
+        },
+        {
+            "id": "3",
+            "name": "隘ｿ譌･譛ｬ",
+            "platform_app_key": "dd30441800e8426a88a3715c38104e27",
+            "scheme": "saledemoapp",
+            "password": "00001234"
+        },
+        {
+            "id": "4",
+            "name": "Digitar Marketing Day",
+            "platform_app_key": "fb57af5dc8b648b6aaa0c2eeab0492e3",
+            "scheme": "saledemoapp",
+            "password": "20141201"
+        },
+        {
+            "id": "5",
+            "name": "Leonis",
+            "platform_app_key": "efa3b49ecdea4d9ea99e6441f8277be6",
+            "scheme": "saledemoapp",
+            "password": "00001234"
+        },
+        {
+            "id": "6",
+            "name": "Dev",
+            "platform_app_key": "a025d8e9d72c4f189b83159fb2e62ef9",
+            "scheme": "saledemoapp",
+            "password": "43214321"
+        },
+        {
+            "id": "7",
+            "name": "TCI",
+            "platform_app_key": "dfcf6ca312974de09f3c064598b5ce8c",
+            "scheme": "saledemoapp",
+            "password": "20141218"
+        }
+    ],
+    "update": ""
+}

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rlt_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/actionbar" >
+
+        <ImageView
+            android:id="@+id/imb_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/title_groups"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+	
+    <ScrollView 
+	    android:id="@+id/scroll_membership"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+		android:layout_below="@+id/rlt_title">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+		    <TextView
+		        android:id="@+id/tv_texttitle"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:paddingLeft="15dp"
+		        android:textColor="@color/font_color"
+		        android:paddingRight="15dp"
+		        android:text="@string/group_description_header" />
+		
+		    <EditText
+		        android:id="@+id/et_textnumber"
+		        android:layout_width="180dp"
+		        android:layout_height="40dp"
+		        android:layout_below="@+id/tv_texttitle"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginRight="15dp"
+		        android:layout_marginTop="15dp"
+		        android:background="@drawable/border_edittext"
+		        android:inputType="textPassword"
+		        android:lines="1"
+		        android:padding="5dp"
+		        android:text="" />
+		
+		    <Button
+		        android:id="@+id/btnStart"
+		        android:layout_width="120dp"
+		        android:layout_height="40dp"
+		        android:layout_alignTop="@+id/et_textnumber"
+		        android:layout_marginLeft="15dp"
+		        android:layout_toRightOf="@+id/et_textnumber"
+		        android:background="@drawable/rounded_button"
+		        android:gravity="center"
+		        android:text="@string/ok"
+		        android:textColor="@android:color/white"
+		        android:textSize="18sp" />
+		    
+		    <RelativeLayout
+		        android:id="@+id/rlt_group_name1"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_below="@+id/btnStart"
+		        android:visibility="gone"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginTop="15dp" >
+		
+		        <TextView
+		            android:id="@+id/group_text1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:text="TCI" />
+		
+		        <View
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            android:layout_alignParentBottom="true"
+		            android:layout_marginBottom="1dp"
+		            android:background="#DADADC" >
+		        </View>
+		
+		        <ImageView
+		            android:id="@+id/img_group_name1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:visibility="gone"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="10dp"
+		            android:src="@drawable/tick_icon" />
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		        android:id="@+id/rlt_group_name2"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_below="@+id/rlt_group_name1"
+		        android:layout_marginLeft="15dp"
+		        android:visibility="gone"
+		        android:layout_marginTop="15dp" >
+		
+		        <TextView
+		            android:id="@+id/group_text2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:text="東日本" />
+		
+		        <View
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            android:layout_alignParentBottom="true"
+		            android:layout_marginBottom="1dp"
+		            android:background="#DADADC" >
+		        </View>
+		
+		        <ImageView
+		            android:id="@+id/img_group_name2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:visibility="gone"
+		            android:layout_marginRight="10dp"
+		            android:src="@drawable/tick_icon" />
+		    </RelativeLayout>
+		    <RelativeLayout
+		        android:id="@+id/rlt_group_name3"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_below="@+id/rlt_group_name2"
+		        android:layout_marginLeft="15dp"
+		        android:visibility="gone"
+		        android:layout_marginTop="15dp" >
+		
+		        <TextView
+		            android:id="@+id/group_text3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:text="西日本" />
+		
+		        <View
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            android:layout_alignParentBottom="true"
+		            android:layout_marginBottom="1dp"
+		            android:background="#DADADC" >
+		        </View>
+		
+		        <ImageView
+		            android:id="@+id/img_group_name3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:visibility="gone"
+		            android:layout_marginRight="10dp"
+		            android:src="@drawable/tick_icon" />
+		    </RelativeLayout>
+		    <RelativeLayout
+		        android:id="@+id/rlt_group_name4"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_below="@+id/rlt_group_name3"
+		        android:visibility="gone"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginTop="15dp" >
+		
+		        <TextView
+		            android:id="@+id/group_text4"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:text="Digitar Marketing Day" />
+		
+		        <View
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            android:layout_alignParentBottom="true"
+		            android:layout_marginBottom="1dp"
+		            android:background="#DADADC" >
+		        </View>
+		
+		        <ImageView
+		            android:id="@+id/img_group_name4"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:visibility="gone"
+		            android:layout_marginRight="10dp"
+		            android:src="@drawable/tick_icon" />
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		        android:id="@+id/rlt_group_name5"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_below="@+id/rlt_group_name4"
+		        android:visibility="gone"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginTop="15dp" >
+		
+		        <TextView
+		            android:id="@+id/group_text5"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:text="Leonis" />
+		
+		        <View
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            android:layout_alignParentBottom="true"
+		            android:layout_marginBottom="1dp"
+		            android:background="#DADADC" >
+		        </View>
+		
+		        <ImageView
+		            android:id="@+id/img_group_name5"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:visibility="gone"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="10dp"
+		            android:src="@drawable/tick_icon" />
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		        android:id="@+id/rlt_group_name6"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_below="@+id/rlt_group_name5"
+		        android:visibility="gone"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginTop="15dp" >
+		
+		        <TextView
+		            android:id="@+id/group_text6"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:text="Dev" />
+		
+		        <View
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            android:layout_alignParentBottom="true"
+		            android:layout_marginBottom="1dp"
+		            android:background="#DADADC" >
+		        </View>
+		
+		        <ImageView
+		            android:id="@+id/img_group_name6"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:visibility="gone"
+		            android:layout_marginRight="10dp"
+		            android:src="@drawable/tick_icon" />
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		        android:id="@+id/rlt_group_name7"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_below="@+id/rlt_group_name6"
+		        android:visibility="gone"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginTop="15dp" >
+		
+		        <TextView
+		            android:id="@+id/group_text7"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:text="TCI" />
+		
+		        <View
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            android:layout_alignParentBottom="true"
+		            android:layout_marginBottom="1dp"
+		            android:background="#DADADC" >
+		        </View>
+		
+		        <ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:id="@+id/img_group_name7"
+		            android:visibility="gone"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="10dp"
+		            android:src="@drawable/tick_icon" />
+		    </RelativeLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/lnl_layout_button"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="50dp"
+		        android:paddingRight="50dp"
+		        android:visibility="gone"
+		        android:layout_marginTop="15dp"
+		        android:layout_below="@+id/rlt_group_name7" >
+		
+		        <Button
+		            android:id="@+id/btnOK"
+		            android:layout_width="120dp"
+		            android:layout_height="40dp"
+		            android:layout_marginRight="10dp"
+		            android:background="@drawable/rounded_button"
+		            android:gravity="center"
+		            android:layout_weight="1"
+		            android:text="@string/ok"
+		            android:textColor="@android:color/white"
+		            android:textSize="18sp" />
+		
+		        <Button
+		            android:id="@+id/btnCancel"
+		            android:layout_width="120dp"
+		            android:layout_height="40dp"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="10dp"
+		            android:background="@drawable/rounded_button"
+		            android:gravity="center"
+		            android:text="@string/cancel"
+		            android:textColor="@android:color/white"
+		            android:textSize="18sp" />
+		    </LinearLayout>
+	    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

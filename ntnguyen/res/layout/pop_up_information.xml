@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rlt_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/actionbar" >
+
+        <ImageView
+            android:id="@+id/imb_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/device_information"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ScrollView 
+	    android:id="@+id/scroll_membership"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+		android:layout_below="@+id/rlt_title">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+		    <TextView
+		        android:id="@+id/tv_udid"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_alignParentLeft="true"
+		        android:paddingLeft="10dp"
+		        android:gravity="bottom"
+		        android:paddingBottom="5dp"
+		        android:background="#efeff4"
+		        android:text="UDID" />
+		
+		    <TextView
+		        android:id="@+id/tv_udid_content"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/tv_udid"
+		        android:layout_marginLeft="10dp"
+		        android:gravity="center|left"
+		        android:textColor="@color/font_color"
+		        android:text="46640D49-5C2D-40D7-BF65-C585BA60B3F6" />
+		
+		    <TextView
+		        android:id="@+id/tv_token"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/tv_udid_content"
+		        android:paddingLeft="10dp"
+		        android:gravity="bottom"
+		        android:background="#efeff4"
+		        android:paddingBottom="5dp"
+		        android:text="AUTHENTICATION TOKEN" />
+		
+		    <TextView
+		        android:id="@+id/tv_token_content"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/tv_token"
+		        android:layout_marginLeft="10dp"
+		        android:gravity="center|left"
+		        android:textColor="@color/font_color"
+		        android:text="UDID" />
+		
+		    <TextView
+		        android:id="@+id/tv_version"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/tv_token_content"
+		        android:paddingLeft="10dp"
+		        android:gravity="bottom"
+		        android:paddingBottom="5dp"
+		        android:background="#efeff4"
+		        android:text="@string/app_version" />
+		
+		    <TextView
+		        android:id="@+id/tv_version_content"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/tv_version"
+		        android:layout_marginLeft="10dp"
+		        android:textColor="@color/font_color"
+		        android:gravity="center|left"
+		        android:text="1.0.0" />
+    	</RelativeLayout>
+    </ScrollView>
+    
+</RelativeLayout>

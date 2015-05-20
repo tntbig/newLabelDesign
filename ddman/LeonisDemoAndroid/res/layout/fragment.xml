@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_menu_0"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            
+            android:background="@drawable/round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="...."
+            android:textColor="#fff"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/btn_menu_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_above="@+id/btn_menu_0"
+            android:layout_alignLeft="@+id/btn_menu_0"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="店舗\n選択"
+            android:textColor="#fff"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/btn_menu_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/btn_menu_1"
+            android:layout_alignLeft="@+id/btn_menu_1"
+            android:visibility="gone"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="消し\n込み"
+            android:textColor="#fff"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    
+
+</FrameLayout>

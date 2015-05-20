@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_action_search" android:id="@+id/action_search" android:title="@string/action_search"  />
+    <item android:icon="@drawable/ic_action_discard" android:id="@+id/action_discard" android:title="@string/action_discard"  />
+    <item android:icon="@drawable/ic_action_refresh" android:id="@+id/action_refresh" android:title="@string/action_refresh"  />
+</menu>

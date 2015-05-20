@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OfferDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_refresh">リフレッシュボタン</string>
+    <string name="action_edit">action_edit</string>
+    <string name="action_about">action_about</string>
+    <string name="action_search">action_search</string>
+    <string name="action_discard">action_discard</string>
+    <string name="action_unread">未読・既読</string>
+    
+    
+    <!-- main -->
+    <string name="reset">リセット</string>
+    <string name="function">機能</string>
+    <string name="coupon">クーポン一覧</string>
+    <string name="recommendation">レコメンド一覧</string>
+    <string name="stamp">スタンプラリー</string>
+    <string name="compaign">キャンペーンコード入力</string>
+    <string name="notification">プッシュ通知履歴</string>
+    
+    <string name="group">所属グループ</string>
+    <string name="target_id">社員番号</string>
+    <string name="ok">OK</string>
+    <string name="cancel">キャンセル</string>
+    <string name="getCoupon">クーポンを取得</string>
+
+</resources>

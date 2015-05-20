@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="silver">#ebece7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#ffffdc7e</color>
+    <color name="grey">#ffd3d3d3</color>
+    <color name="green">#ff8dd304</color>
+    <color name="blue">#ff82e0ff</color>
+    <color name="yellow">#fffffbae</color>
+    <color name="red">#fff10800</color>
+    <color name="list_item_pressed">#1A000000</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="teal">#008080</color>
+    <color name="navy">#000080</color>
+    <color name="black">#000000</color>
+	<color name="actionbar">#ABA06D</color>
+	<color name="darkblue">#56669A</color>
+	<color name="whitegreen">#8CA892</color>
+
+    <color name="nice_button_start">#ABA06D</color>
+    <color name="nice_button_end">#ABA06D</color>
+    <color name="nice_button_disable_start">#565051</color>
+    <color name="nice_button_disabled_end">#736F6E</color>
+    <color name="nice_button_border">#254117</color>
+    <color name="pop_up_background">#efeff4</color>
+    <color name="font_color">#6c6c6c</color>
+    
+</resources>
